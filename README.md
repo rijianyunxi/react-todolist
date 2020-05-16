@@ -2,7 +2,7 @@
 
 ## 前言 
 
-学了这么久的react 对于redux还是迷迷糊糊的，于是就写下todolist来熟练redux和redux-react
+学了很多天的react 对于redux还是迷迷糊糊的，于是就写下todolist来熟练redux和redux-react
 
 ## 思路
 
@@ -97,3 +97,7 @@ export default (state=defaultState,action)=>{
 ```
 
 思路大致是这样的，记录下。
+
+## 修改
+
+后来看了下别人写的redux，发现自己写的很多地方不规范，修改了下，每个组件里都创建了store，store里有instances，reducer，actionCreators，然后用index引入再暴露出去，在最外部的reducer用combineReducers集体管理众多的reducer

@@ -1,12 +1,8 @@
-const defaultState = {
-    inputValue:'react',
-    list:[]
-}
-export default (state=defaultState,action)=>{
-    if(action.type === "change_input_value"){
-        const newState = JSON.parse(JSON.stringify(state));
-        newState.inputValue = action.value;
-        return newState
-    }
-    return state;
-}
+import { combineReducers } from 'redux-immutable'
+import {reducer as headerReducer} from '../application/header/store'
+
+const reducer = combineReducers({
+    header: headerReducer
+})
+
+export default reducer;
