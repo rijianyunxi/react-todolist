@@ -6,7 +6,10 @@
 
 ## 效果
 
-
+![image](https://github.com/rijianyunxi/react-todolist/blob/master/yanshi/1.png)
+结构
+![image](https://github.com/rijianyunxi/react-todolist/blob/master/yanshi/2.png)
+![image](https://songjintao.cn/wp-content/uploads/2020/05/QQ20200517-154419.png)
 
 ## 简单的使用方法，思路
 
