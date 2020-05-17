@@ -1,0 +1,92 @@
+.box{
+    height:100vh;
+    width:100%;
+    background: #1E1F1C;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: #fff;
+}
+.box-head{
+    height: 80px;
+    width: 60%;
+    margin: 0 auto;
+}
+.box-head .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-head input{
+    height: 50px;
+    width: 50%;
+    outline: 0;
+    color: #fff;
+    font-size: 19px;
+    background: #34342F;
+    border-radius: 10px;
+    margin-right: 25px;
+    padding: 0 10px;
+}
+.box-head button{
+    height: 50px;
+    width: 10%;
+    outline: 0;
+    background: #34342F;
+    border-radius: 10px;
+    color: #fff;
+}
+.box-content{
+    width: 60%;
+    background: #34342F;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+@media screen and (max-width: 750px) {
+    .box-content{
+        width: 95%;
+        background: #34342F;
+        margin: 30px auto;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .box-head{
+        height: 80px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .box-head input{
+        width: 65%;
+        margin-right: 15px;
+    }
+    .box-head button{
+        width: 20%;
+    }
+}
+.box-content h1{
+    height: 35px;
+    line-height: 35px;
+    font-weight: bold;
+    font-size: 22px;
+    padding-left: 7px;
+    border-left: 5px solid #1E1F1C;
+}
+.box-content  li{
+    height: 40px;
+    width: 90%;
+    margin: 10px 5%;
+    line-height: 40px;
+    background: #1E1F1C;
+    border-radius: 7px;
+    padding: 0 10px;
+}
+.box-content .todo{
+    margin-bottom: 20px;
+}
+.box-content .todo li{
+    color: #D1215A;
+}
+.box-content .did li{
+    color: #A7DA41;
+}

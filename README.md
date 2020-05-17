@@ -100,4 +100,4 @@ export default (state=defaultState,action)=>{
 
 ## 修改
 
-后来看了下别人写的redux，发现自己写的很多地方不规范，修改了下，每个组件里都创建了store，store里有instances，reducer，actionCreators，然后用index引入再暴露出去，在最外部的reducer用combineReducers集体管理众多的reducer
+后来看了下别人写的redux，发现自己写的很多地方不规范，修改了下，引入了immutable和react-immutable来管理state。然后每个组件目录里都创建了store，store里有instances，reducer，actionCreators，然后用index引入再暴露出去，在最外部的reducer用combineReducers集体管理众多的reducer

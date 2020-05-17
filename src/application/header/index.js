@@ -1,11 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import * as actionCreators from './store/actionCreators'
+import {changeInputValue} from './store/actionCreators'
+import * as actionCreators from '../todo/store/actionCreators'
 
 const Header = (props)=>{
     return(
-        <div>
-            <input onChange={ props.handleInputChange } /><button>提交</button>
+        <div className="head">
+            <input value={props.inputValue} onChange={ props.handleInputChange } /><button onClick={()=>{props.addTodoList(props.inputValue)}}> 添加</button>
         </div>
     )
 }
@@ -19,7 +20,13 @@ const mapState = (state)=>{
 const mapDispatch = (dispatch)=>{
     return{
         handleInputChange(e){
-            dispatch(actionCreators.changeInputValue(e.target.value));
+            dispatch(changeInputValue(e.target.value));
+        },
+        addTodoList(data){
+            if(data.length>0){
+                dispatch(actionCreators.addTodoList(data));
+                dispatch(changeInputValue(''));
+            }
         }
     }
 }
