@@ -2,7 +2,7 @@
 
 ## 前言 
 
-学了很多天的react 对于redux还是迷迷糊糊的，于是就写下todolist来熟练redux和redux-react，经过不断的完善终于完成啦，经过本次的小demo，收获到啦不少，已经完全明白了redux和react的流程，以及使用immutable和react-immutable来管理，受益很多
+学了很多天的react 对于redux还是迷迷糊糊的，于是就写下todolist来熟练redux和redux-react，经过不断的完善终于完成啦，经过本次的小demo，收获到啦不少，已经完全明白了redux和react的流程，以及使用immutable和redux-immutable来管理，受益很多
 
 ## 效果
 
