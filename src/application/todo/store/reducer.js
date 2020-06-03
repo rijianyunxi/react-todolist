@@ -3,7 +3,7 @@ import * as actionTypes from './constances'
 
 
 const defaultState=fromJS({
-    todoList:['摘星星']
+    todoList:['摘星星','太空人']
 })
 
 export default (state= defaultState,action)=>{
