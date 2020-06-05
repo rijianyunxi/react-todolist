@@ -7,7 +7,7 @@
 ## 效果
 ![image](https://songjintao.cn/wp-content/uploads/2020/05/QQ20200517-154419.png)
 
-##git  简单的使用方法，思路
+##git  简单的使用方法思路
 
 * 创建reducer,定义初始数据，导出
 
